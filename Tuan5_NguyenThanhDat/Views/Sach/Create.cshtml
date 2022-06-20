@@ -1,7 +1,9 @@
 ﻿@model Tuan5_NguyenThanhDat.Models.Sach
 
-@{ ViewBag.Title = "Create";
-                Layout = "~/Views/Shared/_Layout.cshtml"; }
+@{ 
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml"; 
+}
 
 <h2>Thêm Sách Mới</h2>
 
@@ -13,7 +15,7 @@
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
             <div class="col-md-10">
-                <strong>Mã loại</strong>
+                <strong>Mã loại:</strong>
                 @Html.EditorFor(model => model.maloai, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.maloai, "", new { @class = "text-danger" })
             </div>
@@ -21,7 +23,7 @@
 
         <div class="form-group">
             <div class="col-md-10">
-                <strong>Tên sách</strong>
+                <strong>Tên sách:</strong>
                 @Html.EditorFor(model => model.tensach, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.tensach, "", new { @class = "text-danger" })
             </div>
@@ -29,7 +31,7 @@
 
         <div class="form-group">
             <div class="col-md-10">
-                <strong>Hình</strong>
+                <strong>Hình:</strong>
                 @Html.EditorFor(model => model.hinh, new { htmlAttributes = new { @class = "form-control" } }) 
                 @Html.ValidationMessageFor(model => model.hinh, "", new { @class = "text-danger" })
                 <input type="file" name="fileUpload" id="fileUpload" accept="image/*" style="display:none;" />
@@ -39,7 +41,7 @@
 
         <div class="form-group">
             <div class="col-md-10">
-                <strong>Giá bán</strong>
+                <strong>Giá bán:</strong>
                 @Html.EditorFor(model => model.giaban, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.giaban, "", new { @class = "text-danger" })
             </div>
@@ -47,7 +49,7 @@
 
         <div class="form-group">
             <div class="col-md-10">
-                <strong>Ngày cập nhật</strong>
+                <strong>Ngày cập nhật:</strong>
                 @Html.EditorFor(model => model.ngaycapnhat, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.ngaycapnhat, "", new { @class = "text-danger" })
             </div>
@@ -55,7 +57,7 @@
 
         <div class="form-group">
             <div class="col-md-10">
-                <strong>Số lượng tồn</strong>
+                <strong>Số lượng tồn:</strong>
                 @Html.EditorFor(model => model.soluongton, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.soluongton, "", new { @class = "text-danger" })
             </div>
