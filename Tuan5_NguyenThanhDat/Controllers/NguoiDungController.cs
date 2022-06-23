@@ -71,12 +71,13 @@ namespace Tuan5_NguyenThanhDat.Controllers
             {
                 ViewBag.ThongBao = "Chúc mừng đăng nhập thành công (*v*)!!!";
                 Session["TaiKhoan"] = kh;
+                return RedirectToAction("Index", "Home");
             }
             else
             {
                 ViewBag.ThongBao = "Tên đăng nhập hoặc mật khẩu không đúng (-_-)!!!";
             }
-            return RedirectToAction("Index", "Home");
+            return View();
         }
     }
 }
