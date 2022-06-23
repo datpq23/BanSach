@@ -39,6 +39,7 @@ namespace Tuan5_NguyenThanhDat.Controllers
                 }  
                 else
                 {
+
                     kh.hoten = hoten;
                     kh.tendangnhap = tendangnhap;
                     kh.matkhau = matkhau;
